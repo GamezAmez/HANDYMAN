@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handyman Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-weight: bold;
+        }
+        select, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        #results {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Handyman Search</h1>
+        <label for="service">Select a service:</label>
+        <select id="service">
+            <option value="Plumbing">Plumbing</option>
+            <option value="Electrical">Electrical</option>
+            <option value="Carpentry">Carpentry</option>
+            <option value="Painting">Painting</option>
+        </select>
+        <label for="location">Select a location:</label>
+        <select id="location">
+            <option value="Main Campus">Main Campus</option>
+            <option value="Osasogie">Osasogie</option>
+            <option value="Ekosodin">Ekosodin</option>
+            <option value="BDPA">BDPA</option>
+        </select>
+        <button onclick="searchHandymen()">Search</button>
+        <div id="results">
+            <!-- Search results will be displayed here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="scripts.js"></script>
+    <script src="scriptss.js"></script>
+</body>
+</html>
